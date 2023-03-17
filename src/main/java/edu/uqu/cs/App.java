@@ -4,7 +4,7 @@ package edu.uqu.cs;
  * CS 1312
  */
 
-import javax.swing.ComponentInputMap;
+
 import java.util.Scanner;
 
 /*
@@ -73,32 +73,59 @@ public static void twisters (){
 public static void phoneKeypad (String str){
     for (int i = 0 ; i < str.length() ; i++) {
         switch (str.charAt(i)){
-            case a,b,c :
+            case 'a':
+            case 'b': 
+            case 'c':
+        
             System.out.print(2);
-            continue;
-            case d,e,f :
+              continue;
+
+            case 'd' :
+            case 'e' :
+            case 'f':
+
             System.out.print(3);
-            continue;
-            case g,h,i :
+               continue;
+            case 'g' :
+            case 'h' :
+            case 'i' :
+
             System.out.print(4);
-            continue;
-            case j,k,l :
+               continue;
+            case 'j' :
+            case 'k' :
+            case 'l' :
+
             System.out.print(5);
-            continue;
-            case m,n,o :
+               continue;
+            case 'm' :
+            case 'n' :
+            case 'o' :
             System.out.print(6);
-            continue;
-            case p,q,r,s :
+               continue;
+            case 'p' :
+            case 'q' :
+            case 'r' :
+            case 's' :
+
             System.out.print(7);
-            continue;
-            case t,u,v :
+               continue;
+            case 't' :
+            case 'u' :
+            case 'v' :
+
             System.out.print(8);
-            continue;
-            case w,x,y,z :
+               continue;
+            case 'w' :
+            case 'x' :
+            case 'y' :
+            case 'z' :
+
             System.out.print(9);
-            continue;
+               continue;
 
         }
+        System.out.println();
         
     }
 }
@@ -117,11 +144,11 @@ public static void phoneKeypad (String str){
        twisters();
 
        System.out.println("Enter str");
-       String userStr = scnr.next();
+       String userStr = scnr.nextLine();
        phoneKeypad(userStr);
 
 
-
+      scnr.close();
     }
 
 }
